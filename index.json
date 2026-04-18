@@ -6,7 +6,8 @@
     "category": "History",
     "imageUrl": "https://picsum.photos/800/400?random=5",
     "contentPath": "posts/test_long.md",
-    "source": "Syndicate Research"
+    "source": "Syndicate Research",
+    "tags": ["Culture", "Tech", "Society"]
   },
   {
     "id": "1",
