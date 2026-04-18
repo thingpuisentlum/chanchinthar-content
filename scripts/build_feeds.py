@@ -31,18 +31,21 @@ def parse_simple_yaml(yaml_str):
 
 def parse_article(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-        if not content.startswith('---'):
-            return None
+        raw_content = f.read()
+        if not raw_content.startswith('---'):
+            return None, None
         
-        parts = content.split('---')
+        # Split by --- but only for the first two occurrences
+        parts = raw_content.split('---', 2)
         if len(parts) < 3:
-            return None
+            return None, None
             
         metadata = parse_simple_yaml(parts[1])
+        article_body = parts[2].strip()
+        
         metadata['contentPath'] = os.path.relpath(file_path, 'content').replace('\\', '/')
         metadata['contentPath'] = 'articles/' + metadata['contentPath']
-        return metadata
+        return metadata, article_body
 
 def build():
     all_posts = []
@@ -52,13 +55,14 @@ def build():
         for file in files:
             if file.endswith('.md'):
                 full_path = os.path.join(root, file)
-                post = parse_article(full_path)
+                post, body = parse_article(full_path)
                 if post:
                     all_posts.append(post)
+                    # Save STRIPPED article to public/articles
                     dest_path = os.path.join(PUBLIC_DIR, post['contentPath'])
                     os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-                    with open(full_path, 'r', encoding='utf-8') as f_in, open(dest_path, 'w', encoding='utf-8') as f_out:
-                        f_out.write(f_in.read())
+                    with open(dest_path, 'w', encoding='utf-8') as f_out:
+                        f_out.write(body)
 
     all_posts.sort(key=lambda x: x.get('date', ''), reverse=True)
 
@@ -93,7 +97,7 @@ def build():
         with open(os.path.join(cat_dir, 'meta.json'), 'w', encoding='utf-8') as f:
             json.dump({"total_pages": total_pages}, f)
 
-    print(f"Successfully built nested feeds for {len(all_posts)} articles.")
+    print(f"Successfully built nested feeds for {len(all_posts)} articles (stripped).")
 
 if __name__ == '__main__':
     build()
