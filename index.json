@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Khawvel huap chanchin thar pawimawh",
+    "date": "2026-04-18T10:00:00Z",
+    "category": "Khawvel",
+    "imageUrl": "https://picsum.photos/800/400?random=1",
+    "contentPath": "posts/post1.md",
+    "source": "BBC News"
+  },
+  {
+    "id": "2",
+    "title": "Ram chhung economy dinhmun thar",
+    "date": "2026-04-18T08:00:00Z",
+    "category": "Ram chhung",
+    "imageUrl": "https://picsum.photos/800/400?random=2",
+    "contentPath": "posts/post2.md",
+    "source": "Syndicate"
+  }
+]
