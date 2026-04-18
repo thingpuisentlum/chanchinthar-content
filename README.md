@@ -1,2 +1,2 @@
 # chanchinthar-content
-Content repository for Chanchin Thar news app
+Content repository for Chanchinthar news app
