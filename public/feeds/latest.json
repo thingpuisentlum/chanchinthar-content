@@ -13,7 +13,8 @@
       "Trending"
     ],
     "type": "timeless",
-    "contentPath": "articles/portal/history/mizoram_history.md"
+    "contentPath": "articles/portal/history/mizoram_history.md",
+    "content": ""
   },
   {
     "id": "global_1",
@@ -26,7 +27,8 @@
       "World",
       "Politics"
     ],
-    "contentPath": "articles/news/global/global_update_1.md"
+    "contentPath": "articles/news/global/global_update_1.md",
+    "content": ""
   },
   {
     "id": "national_1",
@@ -39,6 +41,7 @@
       "Economy",
       "Business"
     ],
-    "contentPath": "articles/news/national/national_update_1.md"
+    "contentPath": "articles/news/national/national_update_1.md",
+    "content": ""
   }
 ]
