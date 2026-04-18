@@ -1,3 +1,13 @@
+---
+id: "test_long"
+title: "Mizoram Chanchin: Hun Kal Tawh leh Hmasawnna"
+date: "2026-04-18T12:00:00Z"
+category: "History"
+imageUrl: "https://picsum.photos/800/400?random=5"
+source: "Syndicate Research"
+tags: ["Culture", "Tech", "Society", "Trending"]
+type: "timeless"
+---
 # Mizoram Chanchin: Hun Kal Tawh leh Hmasawnna
 
 Mizoram, 'The Land of the Hill People' tia hriat hi India hmar thlang lama state pawimawh tak a ni a. He state-ah hian hmasawnna chi hrang hrang leh chanchin lungchhiat thlak leh hlimawm tak tak a thleng tawh thin a ni.

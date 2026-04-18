@@ -1,0 +1,12 @@
+---
+id: "global_1"
+title: "Khawvel huap chanchin thar pawimawh"
+date: "2026-04-18T10:00:00Z"
+category: "Global"
+imageUrl: "https://picsum.photos/800/400?random=1"
+source: "BBC News"
+tags: ["World", "Politics"]
+---
+# Khawvel huap chanchin thar pawimawh
+
+Khawvel hmun hrang hranga thil thleng thar ber berte kan rawn chhawp chhuah hi i lo chhiar ve dawn nia.
